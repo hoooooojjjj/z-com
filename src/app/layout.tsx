@@ -10,12 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  // 최상위 폴더
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
+      {/* 여기에 레이아웃(인터랙션이 있어도 안바뀌는 부분)을 넣어주면 됨 */}
       <body className={inter.className}>{children}</body>
     </html>
   );
