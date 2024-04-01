@@ -18,7 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* 여기에 레이아웃(인터랙션이 있어도 안바뀌는 부분)을 넣어주면 됨 */}
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <div>루트 레이아웃</div>
+        {children}
+      </body>
     </html>
   );
 }
