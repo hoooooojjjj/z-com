@@ -15,3 +15,6 @@ export default function Layout({
     </div>
   );
 }
+// 주소가 localhost:3000일 때는 children->page.tsx, modal->@modal/default.tsx
+// 주소가 localhost:3000/i/flow/login 때는 chldren->i/flow/login/page.tsx, modal->@modal/i/flow/login/page.tsx
+// => 패러럴 라우트 폴더 안에서도 여러 경로를 만들 수 있다.
