@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "../page.module.css";
+import styles from "../(beforeLogin)/_component/main.module.css";
 export default function Layout({
   children,
   modal,

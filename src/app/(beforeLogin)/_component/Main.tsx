@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../page.module.css";
+import styles from "./main.module.css";
 import Link from "next/link";
 import zLogo from "../../../../public/zlogo.png";
 
