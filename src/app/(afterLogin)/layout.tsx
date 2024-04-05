@@ -1,8 +1,9 @@
-import { ReactNode } from "react";
 import style from "@/app/(afterLogin)/layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import ZLogo from "../../../public/zlogo.png";
+import NavMenu from "./_component/NavMenu";
+import LogoutButton from "./_component/LogoutButton";
 export default function AfterLoginLayout({
   children,
 }: Readonly<{
@@ -19,12 +20,14 @@ export default function AfterLoginLayout({
               </div>
             </Link>
             <nav>
-              <ul>{/* <NavMenu /> */}</ul>
+              <ul>
+                <NavMenu />
+              </ul>
               <Link href="/compose/tweet" className={style.postButton}>
                 게시하기
               </Link>
             </nav>
-            {/* <LogoutButton /> */}
+            <LogoutButton />
           </div>
         </section>
       </header>
