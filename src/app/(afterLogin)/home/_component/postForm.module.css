@@ -23,11 +23,7 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-@media (prefers-color-scheme: dark) {
-  .postForm {
-    border-color: rgb(47, 51, 54);
-  }
-}
+
 .postInputSection {
   flex: 1;
 }
@@ -41,6 +37,8 @@
   font-size: 20px;
   line-height: 24px;
   outline: none;
+  background-color: white;
+  color: black;
 }
 .postForm textarea::placeholder {
   font-family: Malgun Gothic;
