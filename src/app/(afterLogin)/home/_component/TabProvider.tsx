@@ -1,8 +1,8 @@
 "use client";
 
-import { createContext, ReactNode, useState } from "react";
+import React, { ReactNode, useState } from "react";
 
-export const TabContext = createContext({
+export const TabContext = React.createContext({
   tab: "rec",
   setTab: (value: "rec" | "fol") => {},
 });
