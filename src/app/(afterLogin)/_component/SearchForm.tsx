@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./rightSearchZone.module.css";
 
-function SearchForm() {
+function SearchForm({ q }: { q?: string }) {
   return (
     <div style={{ marginBottom: 60, width: "inherit" }}>
       <form className={style.search}>
