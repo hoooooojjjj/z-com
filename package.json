@@ -30,7 +30,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "express": "^4.19.2",
-    "msw": "^2.2.13",
+    "msw": "2.1",
     "typescript": "^5"
   },
   "msw": {
