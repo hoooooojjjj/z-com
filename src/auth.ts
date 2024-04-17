@@ -20,10 +20,13 @@ export const {
         const authResponse = await fetch(
           `${process.env.NEXT_PUBLIC_BASE_URL}}/api/login`,
           {
+            // http 메소드
             method: "POST",
+            // http 헤더 -> http 메시지에 대한 모든 메타 데이터
             headers: {
               "Content-Type": "application/json",
             },
+            // http 바디 -> http 메시지의 데이터
             // 우리는 유저 아이디와 password를 id와 password로 만들었기 때문에 수정
             body: JSON.stringify({
               id: credentials.username,
